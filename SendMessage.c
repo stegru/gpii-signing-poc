@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
 	if (argc != 4) {
-		fprintf(stderr, "usage: %s hwnd msg wParam lParam");
+		fprintf(stderr, "usage: %s hwnd msg wParam lParam", argv[0]);
 		return 1;
 	}
 

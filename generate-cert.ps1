@@ -6,7 +6,7 @@ $pfxFile = "$output.pfx"
 $certFile = "$output.cert"
 
 # Generate the certificate
-$cert = New-SelfSignedCertificate -DnsName testing@self-signed.example -Type CodeSigningCert -CertStoreLocation cert:\CurrentUser\My -KeyDescription "FOR TESTING ONLY - DO NOT TRUST IN PRODUCTION"
+$cert = New-SelfSignedCertificate -DnsName testing.self-signed.example -Type CodeSigningCert -CertStoreLocation cert:\CurrentUser\My -KeyDescription "FOR TESTING ONLY - DO NOT TRUST IN PRODUCTION"
 
 # Set the password for the private key
 $password = ConvertTo-SecureString -String "I'm only testing" -AsPlainText -Force 
