@@ -4,6 +4,6 @@ param (
 
 
 # Make it a trusted publisher
-Import-Certificate -FilePath $certFile -Cert cert:\CurrentUser\TrustedPublisher
+Import-Certificate -FilePath $certFile -Cert cert:\LocalMachine\TrustedPublisher
 # MAke it a root certificate authority
-Import-Certificate -FilePath $certFile -Cert cert:\CurrentUser\Root
+Import-Certificate -FilePath $certFile -Cert cert:\LocalMachine\Root
